@@ -1,0 +1,111 @@
+Chapter#1 – Handling Dropdowns in Selenium
+Select class - Learn how to interact with dropdown elements.
+
+Make sure the Element in the Web should be kept in Select Tag
+
+Syntax:
+Select sel = new Select(WebElement);
+
+
+Chapter#2 – Right Click in Selenium
+Learn how to simulate mouse right-click action.
+
+Chapter#3 – Double Click in Selenium
+Learn how to simulate mouse double-click action.
+
+Chapter#4 – Mouse hover in Selenium
+Learn how to simulate mouse hover action.
+
+Chapter#5 – Drag and Drop in Selenium
+Drag and Drop web elements using Actions class in Selenium.
+
+Chapter#6 – Handling Alerts in Selenium
+Accept – Dismiss alerts or pop-ups in Selenium.
+
+Chapter#7 – Press ENTER, Function and other non-text keys
+Simulate keyboard keypress events for non-text keys like Enter, Ctrl, Alt, etc.
+
+Chapter#8 – Scroll a Webpage in Selenium
+Learn how to scroll up and down to a cordinate or specific element in Selenium.
+
+Chapter#9 – Refresh a webpage in Selenium
+Learn all the ways to refresh a web page in Selenium [5 different ways]
+
+Chapter#10 – Maximize and minimize the Browser
+Selenium commands to maximize and minimize the browser window.
+
+Chapter#11 – Resize the browser window
+Learn the resizing of the browser window in Selenium WebDriver.
+
+Chapter#12 – Navigate Back and Forward in the Browser history
+Navigate back and forward using driver.navigate() command.
+
+Chapter#13 – Keyboard Interactions in Selenium
+Learn about KeyDown, KeyUp, and sendKeys commands.
+
+Chapter#14 – Mouse Interactions in Selenium
+Learn about different mouse interaction commands along with code snippets.
+
+Chapter#15 – Executing JavaScript Code in Selenium
+
+
+http://the-internet.herokuapp.com/context_menu
+http://the-internet.herokuapp.com/hovers
+
+
+http://the-internet.herokuapp.com/horizontal_slider
+http://the-internet.herokuapp.com/drag_and_drop
+https://marcojakob.github.io/dart-dnd/basic/
+https://www.globalsqa.com/demo-site/draganddrop/
+
+https://the-internet.herokuapp.com/javascript_alerts
+
+
+JavascriptExecutor js = (JavascriptExecutor) driver;
+js.executeScript("window.scrollBy(0,350)", "");
+
+// Scrolling down the page till the element is found
+js.executeScript("arguments[0].scrollIntoView();", Element);
+
+JavascriptExecutor js = (JavascriptExecutor) driver;
+js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+
+
+
+Waits:
+Waits to make sure there is synchronization in the tests and make sure page load is handled
+-> Implicit Wait
+-> Explicit Wait
+-> Fluent Wait - This is little complex and not used widely
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pending items on me:
+moveByOffset - slide backwards - Need to check
+Cover Alerts with textbox - Pending
+Scrolling to Top - Pending
+
+
+
+
+
+
+
+

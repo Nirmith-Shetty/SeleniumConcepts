@@ -1,0 +1,102 @@
+Selenium WebDriver Methods
+SearchContext is the topmost interface in Selenium API which has two methods - findElement() and findElements(). Selenium WebDriver interface has many abstract methods like get(String url), quit(), close(), getWindowHandle(), getWindowHandles(), getTitle() etc. WebDriver has nested interfaces like Window, Navigation, Timeouts etc. These nested interfaces are used to perform operations like back(), forward() etc.
+
+
+Method	Description
+get(String url)	- This method will launch a new browser and opens the given URL in the browser instance.
+getWindowHandle() - It is used to handle single window i.e. main window. It return type is string. It will returns browser windlw handle from focused browser.
+getWindowHandles()- It is used to handle multiple windows. It return type is Set. It will returns all handles from all opened browsers by Selenium WebDriver.
+close()- This command is used to close the current browser window which is currently in focus.
+quit() - 	This method will closes all the browsers windows which are currently opened and terminates the WebDriver session.
+getTitle()	- This method is used to retrieve the title of the webpage the user currently working on.
+
+List of Commands on WebElement
+Selenium WebElement represents an HTML element. We can get an instance of WebElement using findElement() method and then perform specific actions such as click, submit etc.
+Some of the commonly used WebElement methods are:
+1) findElement()- This method finds the first element within the current web page by using given locator.
+WebElement element = driverObject.findElement(By.locator(“value”));
+
+2) sendKeys()- This method enters a value in to an Edit Box or Text box.
+driver.findElement(By.elementLocator(“value”)).sendkeys(“value”);
+
+3) clear()- It clears the Value from an Edit box or Text Box.
+driver.findElement(By.locatorname(“value”)).clear();
+
+4) click()- It clicks an Element (Button, Link, Checkbox) etc.
+driver.findElement(By.ElementLocator(“LocatorValue”)).click();
+
+
+Before performing action on any elements, we have to perform following steps.
+1. Inspect the element
+2. Identify/locate the element
+3. Find the element
+4. Perform the action
+
+
+
+//8 ways to locate an element:
+1) ID  - first preference
+2) Name
+3) LinkText
+4) Partial Link Text
+5) Class Name
+6) Xpath
+7) Css selector
+8) Tag Name
+
+Xpath:
+1) Absolute Xpath - It is always be in single slash
+- Parent to child hierarchy to locate the element
+- Not an efficient way to locate an element
+
+Relative Xpath:
+1) //tagName[@AttributeName = 'value']
+
+For text : //tagName[text() = 'value']
+//h1[text()='Signing up is easy!']
+
+Contains Method:
+//input[contains(@name,'customer.firstName')]
+//h1[contains(text(),'Signing up')]
+
+Starts- with:
+//input[starts-with(@name,'customer.firstName')]
+//h1[starts-with(text(),'Signing up')]
+
+
+Locating Child Elements:
+Syntax:
+//tagName[@AttributeName = 'value']/child::tagName
+Eg: //form[@name='login']/child::p[1]
+
+Locating Parent Element:
+Syntax:
+//tagName[@AttributeName = 'value']/parent::tagName
+Eg: //h1[text()='Signing up is easy!']/parent::div
+
+
+Locating Elements using sibling:
+Syntax:
+//tagName[@AttributeName = 'value']/following-sibling::tagName
+//div[@id='login_credentials']/following-sibling::*
+
+//div[@class='login_password']/preceding-sibling::*
+
+Locating Elements using Ancestor and Descendant:
+Syntax:
+//tagName[@AttributeName = 'value']/ancestor::tagName
+
+
+Css Selector:
+tagName[AttributeName = 'value']
+#idName
+
+
+
+
+
+
+
+
+
+

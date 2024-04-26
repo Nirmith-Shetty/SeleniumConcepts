@@ -1,0 +1,11 @@
+What is Selenium IDE?
+Selenium Integrated Development Environment is a very easy tool to learn and use for testing any web application. It is open-source and not heavily dependent on any specific software and can be installed very easily. The latest version of Selenium Integrated Development Environment can be used both in Firefox and Chrome browsers.
+Selenium Integrated Development Environment basically provides a Graphical Interface which enables the user to record all the actions that are performed on the application under test.
+Selenium Integrated Development Environment can be used very well for the purpose of debugging scripts by setting up breakpoints in and around any test steps for troubleshooting errors in test cases.
+The logic put up for a particular test case can be re-utilised in another test case with the help of the run command in Selenium Integrated Development Environment.
+
+What is a Webdriver
+Webdriver is a tool used in web application development to automate testing across multiple types of browsers. Since browsers such as Chrome, Safari, Firefox and Edge all have a tendency to display web apps and websites differently, developers need a efficient way to test accurately at scale. Selenium is a popular webdriver which automates the browser and helps us in automating web application testing across different browsers. Selenium API has provided many classes and interfaces to work with different types of browsers and HTML elements.
+
+What is Selenium WebDriver Interface?
+Selenium WebDriver is an interface that defines a set of methods. However, implementation is provided by the browser specific classes. Some of the implementation classes are AndroidDriver, ChromeDriver, FirefoxDriver, InternetExplorerDriver, IPhoneDriver, SafariDriver etc. The WebDriver main functionality is to control the browser. Kinda like a remote control. It even helps us to select the HTML page elements and perform operations on them such as click, filling a form fields etc.
